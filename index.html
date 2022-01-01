@@ -101,9 +101,6 @@
                 </button>
               </div>
             </div>
-            <div class="progress">
-              <div class="progress-bar" id="quality_progress" role="progressbar" style="width: 0%"></div>
-            </div>
           </div>
 
           <div class="form-group">
@@ -135,35 +132,6 @@
       );
       //清除记录
       var quality_progress = document.getElementById("quality_progress");
-      quality_progress.className = "progress-bar";
-      if (quality > 0 && quality <= 64) {
-        quality_progress.classList.add("bg-danger");
-        quality_progress.style.setProperty(
-          "width",
-          (quality / 120) * 100 + "%"
-        );
-        quality_progress.innerText = "极弱";
-      } else if (quality > 64 && quality <= 80) {
-        quality_progress.classList.add("bg-warning");
-        quality_progress.style.setProperty(
-          "width",
-          (quality / 120) * 100 + "%"
-        );
-        quality_progress.innerText = "弱";
-      } else if (quality > 80 && quality <= 112) {
-        quality_progress.style.setProperty(
-          "width",
-          (quality / 120) * 100 + "%"
-        );
-        quality_progress.innerText = "强";
-      } else if (quality > 112) {
-        quality_progress.classList.add("bg-success");
-        quality_progress.style.setProperty(
-          "width",
-          (quality / 120) * 100 + "%"
-        );
-        quality_progress.innerText = "极强";
-      }
     };
 
     //显示&隐藏密码
