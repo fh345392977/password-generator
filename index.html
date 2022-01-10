@@ -121,7 +121,7 @@
       var sk_pwd = generate_password();
       if (sk_pwd) {
         document.getElementById("code").value = sk_pwd;
-        document.getElementById("btn_copy").click();
+        navigator.clipboard && navigator.clipboard.writeText(sk_pwd);
       }
       //密码强度
       const quality = PasswordQualityCalculator(
