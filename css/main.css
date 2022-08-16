@@ -1,0 +1,483 @@
+html,body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.app-header {
+    padding: 12px 0;
+}
+
+.header-content {
+    margin: 0 auto;
+}
+
+.header-logo {
+    width: 980px;
+    height: 70px;
+    margin: 0 auto;
+	font-size:38px;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.header-logo .logo {
+    font-size: 36px;
+    color: #333;
+}
+
+.header-logo .logo img {
+    vertical-align: middle;
+}
+
+.banner {
+    position: relative;
+    margin-bottom: 30px;
+    height: 480px;
+    background: url(/images/banner.jpg) no-repeat center;
+}
+
+.navigation {
+    left: 0;
+    float: left;
+    width: 100%;
+    position: absolute;
+    height: 69px;
+    top: -3px;
+    background: url(/images/menu.png) center top no-repeat;
+    z-index: 2;
+}
+
+.navigation ul {
+    margin: 0 auto;
+    width: 1000px;
+    height: 69px;
+}
+
+.navigation li {
+    float: left;
+    display: inline;
+    text-align: center;
+    width: 90px;
+    margin-left: 85px;
+}
+
+.navigation li a {
+    display: block;
+    width: 100%;
+    line-height: 69px;
+    text-align: center;
+    height: 69px;
+    font-size: 14px;
+    color: #004b4d;
+    text-shadow: 1px 2px 3px #d9d9d9;
+    font-family: "microsoft yahei";
+    cursor: pointer;
+}
+
+.cur,
+.navigation li a:hover {
+    color: #fff !important;
+    text-shadow: 1px 2px 3px #1c95ae;
+    background: url(/images/menuhover.jpg) center no-repeat;
+}
+
+.index-notice {
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    height: 56px;
+    line-height: 56px;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    color: #23b0cd;
+    background: url(/images/notice.png) bottom center no-repeat;
+}
+
+.index-notice .noticemain {
+    width: 980px;
+    margin: 0 auto;
+    height: 56px;
+}
+
+.index-notice .noticemain b {
+    float: left;
+    display: inline;
+    height: 56px;
+    margin-left: 22px;
+    width: 103px;
+    background: url(/images/noticeb.png) center left no-repeat;
+}
+
+.noticemain marquee {
+    float: left;
+    width: 300px;
+    display: inline;
+}
+
+.noticemain .search {
+    position: relative;
+    float: right;
+    padding-top: 12px;
+    margin-right: 12px;
+    height: 34px;
+    display: inline;
+}
+
+.noticemain .search .text {
+    float: left;
+    width: 244px;
+    color: #a1a1a1;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    background: url(/images/text.png) top left no-repeat;
+    border: none;
+}
+
+.noticemain .search .button {
+    vertical-align: middle;
+    float: left;
+    width: 55px;
+    height: 30px;
+    background: url(/images/button.png) top left no-repeat;
+    display: inline;
+    border: none;
+}
+
+.news-box {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.news .new-title {
+    position: relative;
+    height: 84px;
+    background: url(/images/news_t.gif) top left no-repeat;
+}
+
+.more {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    padding: 0 5px;
+    font-size: 14px;
+    background: #23b0cd;
+    color: #fff;
+    cursor: pointer;
+}
+
+.news-list li a {
+    padding-left: 28px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+    line-height: 35px;
+    background: url(/images/newsico.gif) 5px no-repeat;
+}
+
+.news-list li a:hover {
+    color: #23b0cd;
+}
+
+.index-case {
+    position: relative;
+    margin: 32px auto;
+    height: 41px;
+}
+
+.index-case span {
+    width: 127px;
+    height: 41px;
+    line-height: 41px;
+    color: #fff;
+    text-shadow: 1px 0 0 #1d282f;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    padding-left: 30px;
+    background: url(/images/case_t.jpg) top no-repeat;
+}
+
+.index-case .more {
+    bottom: 0;
+}
+
+.case-main {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 60px;
+    width: 1200px;
+    height: 300px;
+}
+
+.case-main .img-box {
+    width: 400px;
+    cursor: pointer;
+}
+
+.case-main .img-box img {
+    height: 200px;
+    max-width: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    height: 60px;
+    width: 60px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.case-main:hover .swiper-button-prev,
+.case-main:hover .swiper-button-next {
+    opacity: 1;
+}
+
+.swiper-button-prev {
+    background: url(/images/arrow_left.png) no-repeat center;
+    background-size: cover;
+}
+
+.swiper-button-next {
+    background: url(/images/arrow_right.png) no-repeat center;
+    background-size: cover;
+}
+
+.footer {
+    padding-top: 63px;
+    width: 100%;
+    margin-top: 40px;
+    min-width: 1004px;
+    font-size: 14px;
+    background: url(/images/foot.jpg) repeat-x top center;
+    color: #70abad;
+}
+
+.footer .foot-main {
+    overflow: auto;
+    clear: both;
+    margin: 0 auto;
+}
+
+.foot-text p,
+.foot-text a {
+    color: #70abad;
+    text-align: center;
+    padding-left: 8px;
+    line-height: 30px;
+}
+
+.apparatus {
+    margin: 0 auto;
+    position: relative;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.title-view {
+    padding: 30px 20px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.title-view .fl {
+    float: left;
+    font-size: 23px;
+    color: #23b0cd;
+    padding-left: 40px;
+    font-family: 微软雅黑;
+    background: url(/images/titleview.gif) no-repeat 14px;
+}
+
+.title-view a {
+    color: #666;
+}
+
+.main-view {
+    padding: 40px;
+}
+
+.pro-list {
+    overflow: hidden;
+}
+
+.pro-list li {
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 11px;
+    width: 210px;
+    cursor: pointer;
+}
+
+.pro-list .img-box {
+    padding: 5px;
+    height: 210px;
+    border: 1px solid #a6d6e0;
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.pro-list .img-box img {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pro-list .protxt {
+    padding-left: 22px;
+    border: 1px solid #a6d6e0;
+    line-height: 23px;
+    height: 23px;
+    width: 210px;
+    font-size: 12px;
+    color: #23b0cd;
+    margin-top: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #fff;
+    background: url(/images/proico.gif) 8px no-repeat #fff;
+}
+
+.pagination-box {
+    padding-top: 50px;
+    text-align: center;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 6px 12px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a.active {
+    background-color: #409eff;
+    color: white;
+    border: 1px solid #409eff;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.page-detail .title {
+    font-size: 18px;
+    font-family: 黑体;
+    font-weight: 400;
+    color: #23b0cd;
+    text-align: center;
+}
+
+.page-detail .time {
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 12px;
+    line-height: 35px;
+}
+
+.page-detail .line {
+    margin: 10px 0 20px;
+    height: 8px;
+    border-bottom: 1px dashed #bec0bf;
+}
+
+.page-detail .commodity-params {
+    padding: 17px 30px;
+    background: rgb(247, 247, 247);
+}
+
+.page-detail .commodity-params .flex-wrp {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.page-detail .commodity-params .tips {
+    font-size: 14px;
+    color: #666;
+}
+
+.page-detail .commodity-img {
+    padding-top: 20px;
+}
+
+.page-detail .commodity-img img {
+    display: block;
+    max-width: 100%;
+}
+
+.page-detail .returnlist {
+    text-align: right;
+}
+
+.page-detail .returnlist a {
+    font-size: 12px;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+.page-hyzx .news-list li a {
+    background: url(/images/newslist.gif) 5px no-repeat;
+}
+
+.address-info {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.address-info p {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.map-container {
+    height: 300px;
+}
+
+.amap-logo,
+.amap-copyright {
+    display: none !important;
+}
