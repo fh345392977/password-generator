@@ -1,147 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>密码生成工具</title>
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection" />
-  <style>
-    .range {
-      flex: 1;
-      margin-left: 8px;
-    }
-    .tickmarks {
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
-</head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>公司名称</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/swiper.min.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
 
-<body>
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="input-field col-12 col-sm-12 col-md-8 col-lg-6">
-        <div class="alert alert-warning" role="alert">
-          <ol style="margin-bottom: 0">
-            <li>记忆密码复杂一点（固定）</li>
-            <li>区分代码按一定规则：比如QQ密码区分代码为qq</li>
-          </ol>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <div class="w980 header-content">
+          <div class="header-logo">
+            <img
+              src="/images/logo.jpg"
+              alt=""
+              style="width: 56px; vertical-align: bottom"
+            />
+            公司名称
+          </div>
         </div>
-        <form>
-          <!--记忆密码-->
-          <div class="input-group mb-2 mr-sm-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">密码</div>
-            </div>
-            <input type="text" class="form-control" id="pwd" placeholder="Memory Password" value="" autocomplete="off"/>
-            <div class="input-group-prepend">
-              <span class="input-group-text" onclick="change_show_status('pwd')"
-                onmouseover="this.style.cursor='pointer'">显示</span>
+      </header>
+      <div class="banner">
+        <div class="navigation">
+          <ul>
+            <li><a href="/" class="cur">网站首页</a></li>
+            <li><a class="c" href="/ypzs.html">药品展示</a></li>
+            <li><a class="c" href="/ylqx.html">医疗器械</a></li>
+            <li><a class="c" href="/hyzx.html">行业资讯</a></li>
+            <li><a class="c" href="/contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="index-notice">
+          <div class="noticemain">
+            <b style="overflow: hidden"></b>
+            <marquee
+              scrollamount="2"
+              onmousemove="this.stop();"
+              onmouseout="this.start();"
+            >
+              欢迎光临本公司网站！
+            </marquee>
+            <div class="search">
+              <form
+                name="formsearch"
+                autocomplete="off"
+                onsubmit="return false"
+              >
+                <input type="hidden" value="" />
+                <input type="text" id="keyword" value="" class="text" />
+                <input
+                  type="button"
+                  title="搜索"
+                  class="button"
+                  id="searchBtn"
+                  style="cursor: pointer"
+                />
+              </form>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="w980 news-box">
+        <div class="news">
+          <div class="new-title c">
+            <a title="查看更多" class="more" href="/hyzx.html">查看更多</a>
+          </div>
+        </div>
+        <ul class="news-list c">
+          <li>
+            <a title="它被称为“吸脂王”不伤身,吃它!吸走1">
+              <span class="fl">它被称为“吸脂王”不伤身,吃它!吸走1</span
+              ><span class="fr">2022-07-17</span>
+            </a>
+          </li>
+          <li>
+            <a title="这东西咬一口，营养赛过八只鸡！好吃的">
+              <span class="fl">这东西咬一口，营养赛过八只鸡！好吃的</span
+              ><span class="fr">2022-07-15</span>
+            </a>
+          </li>
+          <li>
+            <a title="不知道橙子还能这么用的亏大了！蒸一蒸">
+              <span class="fl">不知道橙子还能这么用的亏大了！蒸一蒸</span
+              ><span class="fr">2022-07-14</span>
+            </a>
+          </li>
+          <li>
+            <a title="健康的头号杀手 这个东西竟让癌症翻10倍">
+              <span class="fl">健康的头号杀手 这个东西竟让癌症翻10倍</span
+              ><span class="fr">2022-07-12</span>
+            </a>
+          </li>
+          <li>
+            <a title="血脂高的人应该选择什么样的食物来吃呢">
+              <span class="fl">血脂高的人应该选择什么样的食物来吃呢</span
+              ><span class="fr">2022-07-12</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="w980 index-case">
+        <span class="fl">药品展示</span>
+        <a title="查看更多" class="more" href="/ypzs.html">查看更多</a>
+      </div>
+      <div style="background-color: #e9eced">
+        <div class="case-main">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
+                          <img src="images/img/1/mainbg.jpg" />
+                      </div> -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
 
-          <!--区分代码-->
-          <div class="input-group mb-2 mr-sm-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">代码</div>
-            </div>
-            <input type="text" class="form-control" id="key" placeholder="Distinguish Code" value=""  autocomplete="off"/>
+      <div class="footer">
+        <div class="foot-main">
+          <div class="foot-text">
+            <p>地址：公司地址 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>
+              ICP备案编号：<a
+                title="鄂ICP备XXXXXX号"
+                href="https://beian.miit.gov.cn/"
+                target="_blank"
+                >鄂ICP备XXXXXX号</a
+              >
+            </p>
+            <p>
+              互联网药品信息服务资格证书号：<a
+                title="XXXXXXX号"
+                href="https://beian.miit.gov.cn/"
+                target="_blank"
+                >XXXXXXX号</a
+              >
+            </p>
+            <p>技术支持：<a href="http://www.whlmpp.com/">兰猫爬爬</a></p>
+            <p>
+              承诺本网站不涉及药品交易、不撮合药品交易、不发布麻醉药品、精神药品、医疗用毒性药品、放射性药品、性药品、戒毒药品和医疗机构制剂的产品信息。
+            </p>
+            <p></p>
           </div>
-
-          <!--密码长度-->
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <label class="input-group-text" for="pwd_length">长度</label>
-            </div>
-            <div class="range">
-              <input type="range" min="10" max="20" value="16" id="pwd_length" list="tickmarks" style="width: 100%;">
-              <datalist id="tickmarks" class="tickmarks">
-                <option value="10" label="10"></option>
-                <option value="11" label="11"></option>
-                <option value="12" label="12"></option>
-                <option value="13" label="13"></option>
-                <option value="14" label="14"></option>
-                <option value="15" label="15"></option>
-                <option value="16" label="16"></option>
-                <option value="17" label="17"></option>
-                <option value="18" label="18"></option>
-                <option value="19" label="19"></option>
-                <option value="20" label="20"></option>
-              </datalist>
-            </div>
-          </div>
-
-          <!-- 选项 -->
-          <div class="input-group mb-3">
-            <select class="custom-select" id="rule_of_punctuation">
-              <option value="1" selected>使用标点</option>
-              <option value="-1">禁用标点</option>
-            </select>
-            <div class="input-group-prepend">
-              <label class="input-group-text">选项</label>
-            </div>
-            <select class="custom-select" id="rule_of_letter">
-              <option value="1" selected>区分大小写</option>
-              <option value="-1">全小写</option>
-            </select>
-          </div>
-
-          <!-- 复制密码 -->
-          <div class="form-group">
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" id="code" placeholder="Encrypted Password" value="" readonly />
-              <div class="input-group-append">
-                <button class="btn btn-secondary" type="button" id="btn_copy" data-clipboard-target="#code">
-                  复制
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="row justify-content-center">
-              <button class="btn btn-primary" type="button" id="btn_gencode">
-                生成
-              </button>
-            </div>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript" src="js/clipboard.min.js"></script>
-  <script type="text/javascript" src="js/sha512.min.js"></script>
-  <script type="text/javascript" src="js/PasswordQualityCalculator.min.js"></script>
-  <script type="text/javascript" src="src/seek_password.min.js"></script>
-  <script type="text/javascript">
-    var clipboard = new ClipboardJS("#btn_copy");
-    document.getElementById("btn_gencode").onclick = function () {
-      var sk_pwd = generate_password();
-      if (sk_pwd) {
-        document.getElementById("code").value = sk_pwd;
-        navigator.clipboard && navigator.clipboard.writeText(sk_pwd);
-      }
-      //密码强度
-      const quality = PasswordQualityCalculator(
-        document.getElementById("code").value
-      );
-      //清除记录
-      var quality_progress = document.getElementById("quality_progress");
-    };
-
-    //显示&隐藏密码
-    function change_show_status(input_id) {
-      var input = document.getElementById("pwd");
-      if (input.getAttribute("type") == "password") {
-        input.setAttribute("type", "text");
-
-      } else {
-        input.setAttribute("type", "password");
-      }
-    }
-  </script>
-</body>
-
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script>
+      $(function () {
+        var yaopin = {};
+        $.getJSON('/js/yaopin.json', function (data) {
+          yaopin = data;
+          var str = '';
+          for (var i in yaopin) {
+            str +=
+              '<div class="swiper-slide" data-id=' +
+              yaopin[i].id +
+              '>' +
+              '<div class="img-box">' +
+              '<img src=' +
+              yaopin[i].yaopinimg +
+              ' />' +
+              '</div>' +
+              '</div>';
+          }
+          $('.swiper-wrapper').append(str);
+          var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            slidesPerView: 5,
+            spaceBetween: 20,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            coverflowEffect: {
+              rotate: 0, //设置为0
+              stretch: 0,
+              depth: 50,
+              modifier: 1,
+              slideShadows: false,
+            },
+          });
+        });
+        $('.swiper-wrapper').on('click', '.swiper-slide', function () {
+          var id = $(this).data('id');
+          location.href = '/ypxq.html?id=' + id;
+        });
+        // 搜索
+        $(document).keyup(function (event) {
+          if (event.keyCode == 13) {
+            $('#searchBtn').trigger('click');
+          }
+        });
+        $('#searchBtn').click(function () {
+          var keyword = $('#keyword').val();
+          if (keyword) {
+            for (var i in yaopin) {
+              var name = yaopin[i].name;
+              if (name.indexOf(keyword) != -1) {
+                location.href = '/ypxq.html?id=' + yaopin[i].id;
+                return false;
+              }
+            }
+            alert('没有此商品');
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
